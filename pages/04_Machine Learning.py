@@ -95,7 +95,7 @@ else:
                 })
 
                 prediction = model.predict(input_data)[0]
-                st.success(f"⏳ Прогнозируемая продолжительность поездки: **{round(prediction)} минут**")
+                st.success(f"⏳ Прогнозируемая продолжительность поездки: **{round(prediction/60, 2)} минут**")
 
 # Подвал
 st.markdown("---")
